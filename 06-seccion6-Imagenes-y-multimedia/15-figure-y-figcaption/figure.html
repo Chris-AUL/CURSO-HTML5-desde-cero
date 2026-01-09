@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Figure en HTML5</title>
+</head>
+
+<body>
+    <h1>Figure en HTML5</h1>
+    <!-- Forma 1 Quizás útil-->
+    <span>Formato: <code>&lt;img src="" alt="" title="" width="" height="" /&gt;</code></span>
+    <ul>
+        <li>src: fuente de la imagen, es decir, la URL o ruta del archivo de imagen.</li>
+        <li>alt: texto alternativo que describe la imagen.</li>
+        <li>title: título que aparece al pasar el cursor sobre la imagen.</li>
+        <li>width: ancho de la imagen.</li>
+        <li>height: altura de la imagen.</li>
+    </ul>
+    <br>
+    <br>
+    <img src="https://www.prensalibre.com/wp-content/uploads/2018/12/74616632-e0df-4616-a163-ece29878d2de.jpg?quality=52&w=898"
+        alt="Gaby Moreno - Cantante Guatemalteca" title="Gaby Moreno - Cantante Guatemalteca" width="299px" />
+
+    <br>
+    <br>
+    <!-- Forma 2 NUNCA USAR :v -->
+    <span>Formato: <code>&lt;img src="" alt="" title="" width="" height="" /&gt;</code></span>
+    <ul>
+        <li>src: ruta del archivo de imagen.</li>
+        <li>alt: texto alternativo que describe la imagen.</li>
+        <li>title: título que aparece al pasar el cursor sobre la imagen.</li>
+        <li>width: ancho de la imagen.</li>
+        <li>height: altura de la imagen.</li>
+    </ul>
+    <br>
+    <br>
+    <img src="/home/chris/Imágenes/maxresdefault.jpg" alt="WRC" title="WRC" width="299px" />
+    <p>Este metodo, a veces carga la imagen en la web, a veces no :/. Evitar su uso.</p>
+
+    <!-- Forma 3 Siempre usar, dirección relativa -->
+    <span>Formato: <code>&lt;img src="" alt="" title="" width="" height="" /&gt;</code></span>
+    <ul>
+        <li>src: fuente de la imagen, ruta del archivo de imagen en una carpeta dentro del proyecto.</li>
+        <li>alt: texto alternativo que describe la imagen.</li>
+        <li>title: título que aparece al pasar el cursor sobre la imagen.</li>
+        <li>width: ancho de la imagen.</li>
+        <li>height: altura de la imagen.</li>
+    </ul>
+    <br>
+    <br>
+    <img src="../12-como-poner-una-imagen-en-mi-pagina-web/imagenes/The_Grim_Adventures_of_Billy_&_Mandy_logo.png"
+        alt="The Grim Adventures of Billy & Mandy" title="The Grim Adventures of Billy & Mandy" width="299px" />
+
+    <p>
+        <strong>WRC</strong> es un <i>videojuego de carreras</i> de rally desarrollado por <em>Milestone srl</em> y
+        publicado por <em>Bigben Interactive</em>. Es la
+        serie oficial de videojuegos del <strong>Campeonato Mundial de Rally (WRC)</strong> y cuenta con todas las
+        temporadas, equipos y pilotos
+        del campeonato desde 2010 hasta 2020.
+    </p>
+    <!-- Etiqueta figure -->
+    <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLw0xE_C_wPn-V_Ool7OIGzizqKobP1A9X3g&s"
+            alt="WRC Car" width="200px" />
+        <figcaption>Figura 1: Coche de WRC en acción.</figcaption>
+    </figure>
+</body>
+
+</html>
