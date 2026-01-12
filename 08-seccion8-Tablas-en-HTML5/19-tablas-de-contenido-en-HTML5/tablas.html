@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas en HTML5</title>
+</head>
+
+<body>
+    <h1>Tablas en HTML5</h1>
+    <table border="1" summary="Tabla de películas famosas">
+        <caption>Películas famosas</caption>
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Género</th>
+                <th>Año</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>El señor de los anillos</td>
+                <td>Fantasía</td>
+                <td>2001</td>
+            </tr>
+            <tr>
+                <td>Matrix</td>
+                <td>Ciencia ficción</td>
+                <td>1999</td>
+            </tr>
+            <tr>
+                <td>Inception</td>
+                <td>Ciencia ficción</td>
+                <td>2010</td>
+            </tr>
+            <tr>
+                <td>Gladiator</td>
+                <td>Acción</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>Avatar</td>
+                <td rowspan="2">Ciencia ficción</td>
+                <td>2009</td>
+            </tr>
+            <tr>
+                <td>Jurassic Park</td>
+                <!-- <td>Ciencia ficción</td> -->
+                <td>1993</td>
+            </tr>
+            <tr>
+                <td>Titanic</td>
+                <td>Drama</td>
+                <td>1997</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Fuente: IMDb</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
