@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML5</title>
+</head>
+
+<body>
+    <h1>Validación de formularios en HTML5</h1>
+    <form>
+        <!-- Atributos para input -->
+         <!-- required, minlength, maxlength, pattern, placeholder -->
+        <input type="text" required
+        minlength="5"
+        maxlength="15"
+        pattern="[A-Za-z]{5,15}"
+        placeholder="Solo letras entre 5 y 15 caracteres">
+
+        <input type="number" required
+        min="5"
+        max="20">
+        <input type="submit" value="Enviar formulario">
+    </form>
+</body>
+
+</html>

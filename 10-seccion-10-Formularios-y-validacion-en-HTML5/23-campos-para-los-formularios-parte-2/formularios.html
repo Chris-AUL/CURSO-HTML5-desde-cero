@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML5</title>
+</head>
+
+<body>
+    <h1>Formularios en HTML5</h1>
+    <form action="enlaces.html" method="get" enctype="text/plain">
+        <fieldset>
+            <legend>Información personal</legend>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div>
+                <label for="descripcion">Descripción:</label>
+                <textarea name="descripcion" id="descripcion"></textarea>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico">
+            </div>
+            <div>
+                <label for="psswrd">Contraseña:</label>
+                <input type="password" name="psswrd" id="psswrd" placeholder="Ingresa tu contraseña">
+            </div>
+            <div>
+                Radio:
+                <input type="radio" name="genero" id="hombre" value="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="genero" id="mujer" value="mujer">
+                <label for="mujer">Mujer</label>
+            </div>
+            <div>
+                Select:
+                <select name="genero" id="genero">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div>
+                Checkbox:
+                <label>
+                    <input type="checkbox"> Mayor de edad
+                </label>
+                <label>
+                    <input type="checkbox"> Acepto términos y condiciones
+                </label>
+            </div>
+            <div>
+                Color:
+                <input type="color" name="color" id="color">
+            </div>
+            <div>
+                Fecha:
+                <input type="date" name="fecha" id="fecha">
+            </div>
+            <div>
+                Ficheros:
+                <input type="file" name="fichero" id="fichero">
+            </div>
+            <div>
+                Imagen:
+                <input type="image"
+                    src="../../06-seccion6-Imagenes-y-multimedia/12-como-poner-una-imagen-en-mi-pagina-web/imagenes/The_Grim_Adventures_of_Billy_&_Mandy_logo.png"
+                    alt="Imagen de envío">
+            </div>
+            <div>
+                <input type="hidden" name="oculto" id="oculto" value="valor defecto input hidden">
+            </div>
+            <div>
+                Número:
+                <input type="number" name="numero" id="numero" min="1" max="10" step="1" value="5">
+            </div>
+            <div>
+                Rango:
+                <input type="range" name="rango" id="rango" min="0" max="100" step="10" value="50">
+            </div>
+            <div>
+                Buscar:
+                <input type="search" name="buscar" id="buscar" placeholder="Buscar...">
+                <button>Buscar</button>
+            </div>
+            <div>
+                Teléfono:
+                <input type="tel" name="telefono" id="telefono" placeholder="Ingresa tu teléfono">
+            </div>
+            <div>
+                Hora:
+                <input type="time" name="time" id="time" placeholder="Ingresa la hora">
+            </div>
+            <div>
+                Mes:
+                <input type="month" name="mes" id="mes" placeholder="Ingresa el mes">
+            </div>
+            <div>
+                URL:
+                <input type="url" name="url" id="url" placeholder="Ingresa la URL">
+            </div>
+            <div>
+                Barra de Progreso:
+                <progress min="1" max="100" value="50"></progress>
+            </div>
+            <div>
+                Medidor o Meter:
+                <meter value="25" min="0" max="100"></meter>
+            </div>
+            <div>
+                Lista de datos:
+                <datalist id="lista-frutas">
+                    <option value="Manzana">
+                    <option value="Sandía">
+                    <option value="Melón">
+                    <option value="Pera">
+                    <option value="Plátano">
+                </datalist>
+                <input list="lista-frutas" name="fruta" id="fruta" placeholder="Ingresa una fruta">
+            </div>
+        </fieldset>
+        <input type="submit" value="Enviar formulario">
+        <input type="reset" value="Limpiar el formulario">
+    </form>
+</body>
+
+</html>
