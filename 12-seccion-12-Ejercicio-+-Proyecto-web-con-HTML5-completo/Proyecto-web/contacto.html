@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto con HTML5</title>
+    <link rel="icon" href="image/favicon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <h1>EProyecto web con HTML5</h1>
+        <nav>
+            <!-- menu -->
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="dieta.html">Dieta</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <div>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tus nombres" required>
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+                <div>
+                    <label for="edad">Tu edad: </label>
+                    <input type="number" id="edad" name="edad" placeholder="Ingresa tu edad" min="12" max="120" required>
+                </div>
+                <div>
+                    <label for="genero">Género: </label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecciona tu género</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro...</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="motivo">Motivo de contacto: </label>
+                    <textarea id="motivo" name="motivo" placeholder="Escribe el motivo de tu contacto" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        Proyecto web con HTML5 - &copy; 2026
+        <a href="#top">Ir arriba</a>
+    </footer>
+</body>
+
+</html>
